@@ -9,6 +9,8 @@ function Modal({ isOpen, onClose, data }) {
   const [selectedQualities, setSelectedQualities] = useState([]);
   const [qualityOptions, setQualityOptions] = useState([
     { value: "Option 1", label: "Option 1" },
+    { value: "Option 1", label: "Option 1" },
+    { value: "Option 1", label: "Option 1" },
     { value: "Option 2", label: "Option 2" },
     // Add more quality options here
   ]);
