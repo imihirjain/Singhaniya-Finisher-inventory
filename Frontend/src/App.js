@@ -36,7 +36,7 @@ import DispatchStockIn from "./dispatch/DispatchStockIn";
 import DispatchStockTable from "./dispatch/DispatchStockTable";       
 
 import ProfilePage from "./pages/ProfilePage";
-import Test from "./pages/Test";
+
 
 // Admin Dashboard 
 
@@ -47,6 +47,12 @@ import FinishData from "./dashboard/FinishData"
 import GreyStockData from "./dashboard/GreyStockData";
 import HeatData from "./dashboard/HeatData"
 import ProcessingData from "./dashboard/ProcessingData"
+import AddUser from "./admin/AddUser"
+import AddQuality from "./admin/AddQuality"
+import AddParty from "./admin/AddParty"
+
+
+
 const App = () => {
   const [user, setUser] = useState("");
   const [loader, setLoader] = useState(true);
@@ -134,6 +140,9 @@ const App = () => {
             <Route path="grey-data" element={<GreyStockData />} />
             <Route path="heat-data" element={<HeatData />} />
             <Route path="process-data" element={<ProcessingData />} />
+            <Route path="add-party" element={<AddParty />} />
+            <Route path="add-user" element={<AddUser />} />
+            <Route path="add-quality" element={<AddQuality />} />
 
 
           </Route>
