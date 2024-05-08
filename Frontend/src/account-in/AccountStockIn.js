@@ -88,14 +88,14 @@ const Dropdown = () => {
       <ToastContainer />
       <div className="flex flex-col items-center overflow-hidden">
         <div className="form-data-start w-full max-w-md mt-6">
-          <div className="border-login border-[1px] rounded-xl overflow-hidden">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden">
             <div className="mt-4 ml-4 h-24 font-login text-2xl font-semibold">
               Account Stock IN
             </div>
             <div className="bg-darkgray h-4 w-full overflow-hidden"></div>
           </div>
 
-          <div className="relative inline-block text-left w-full mt-8 border-login border-[1px] rounded-xl h-[155px] ">
+          <div className="relative inline-block text-left w-full mt-8 border-login shadow-md shadow-darkgray border-[1px] rounded-xl h-[155px] ">
             <div className=" ">
               <div className=" ml-4 flex items-center  gap-4  text-center mt-4 text-xl font-login">
                 Party Name
@@ -193,7 +193,7 @@ const Dropdown = () => {
           </div>
 
           {/* Input Fields */}
-          <div className="border-login border-[1px] rounded-xl overflow-hidden mt-8">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden mt-8">
             <div className="mt-4 h-24">
               <label
                 htmlFor="challanNumber"
@@ -213,7 +213,7 @@ const Dropdown = () => {
             </div>
           </div>
 
-          <div className="border-login border-[1px] rounded-xl overflow-hidden mt-8">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden mt-8">
             <div className="mt-4">
               <label
                 htmlFor="quantity"
@@ -241,7 +241,7 @@ const Dropdown = () => {
             </div>
           </div>
 
-          <div className="border-login border-[1px] rounded-xl overflow-hidden mt-8">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden mt-8">
             <div className="mt-4">
               <label
                 htmlFor="kg"
@@ -261,7 +261,7 @@ const Dropdown = () => {
             </div>
           </div>
 
-          <div className="border-login border-[1px] rounded-xl overflow-hidden mt-8">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden mt-8">
             <div className="mt-4">
               <label
                 htmlFor="meter"
@@ -281,7 +281,7 @@ const Dropdown = () => {
             </div>
           </div>
 
-          <div className="border-login border-[1px] rounded-xl overflow-hidden mt-8">
+          <div className="border-login border-[1px] shadow-md shadow-darkgray rounded-xl overflow-hidden mt-8">
             <div className="mt-4">
               <label
                 htmlFor="roll"
@@ -317,7 +317,7 @@ const Dropdown = () => {
             >
             <button
               type="button"
-              onClick={handleSubmit}
+              // onClick={handleSubmit}
               className="inline-flex mt-4 justify-center px-[65px] py-[10px] text-[18px] font-extrabold font-forget text-white bg-darkgray rounded-md hover:bg-white hover:text-darkgray focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 hover:border-2"
             >
               Preview
