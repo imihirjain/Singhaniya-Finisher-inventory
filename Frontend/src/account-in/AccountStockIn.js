@@ -5,6 +5,7 @@ import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const Dropdown = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Dropdown = () => {
   const options = ["Rajneesh Rana", "Liza Ahuja", "Nitish Kumar"];
 
   const liza =["Nike" ,"Addidas", "airmesh"];
-  
+
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -309,6 +310,22 @@ const Dropdown = () => {
               Submit
             </button>
           </div>
+
+          <div className="mt-4">
+            <Link 
+            to={'/add-prev'}
+            >
+            <button
+              type="button"
+              onClick={handleSubmit}
+              className="inline-flex mt-4 justify-center px-[65px] py-[10px] text-[18px] font-extrabold font-forget text-white bg-darkgray rounded-md hover:bg-white hover:text-darkgray focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 hover:border-2"
+            >
+              Preview
+            </button>
+            </Link>
+          </div>
+
+          
 
           {lotNumber && (
             <div className="mt-4">

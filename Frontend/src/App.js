@@ -50,6 +50,7 @@ import ProcessingData from "./dashboard/ProcessingData"
 import AddUser from "./admin/AddUser"
 import AddQuality from "./admin/AddQuality"
 import AddParty from "./admin/AddParty"
+import Preview from "./account-in/Preview";
 
 
 
@@ -143,7 +144,7 @@ const App = () => {
             <Route path="add-party" element={<AddParty />} />
             <Route path="add-user" element={<AddUser />} />
             <Route path="add-quality" element={<AddQuality />} />
-
+            <Route path="add-prev" element={<Preview />} />
 
           </Route>
           <Route path="*" element={<NoPageFound />} />
